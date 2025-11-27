@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_49484" data-name="Rectangle 49484" width="30" height="30" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" y1="-0.575" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f8f8f8"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </linearGradient>
+    <filter id="Union_766" x="3.468" y="4.459" width="23.044" height="23.094" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#323a45" flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4086e5"/>
+      <stop offset="1" stop-color="#2160b5"/>
+    </linearGradient>
+  </defs>
+  <g id="Troubleshooting_" data-name="Troubleshooting " clip-path="url(#clip-path)">
+    <g id="Group_96332" data-name="Group 96332" transform="translate(5.218 5.22)">
+      <g id="settings_3_" data-name="settings (3)">
+        <g transform="matrix(1, 0, 0, 1, -5.22, -5.22)" filter="url(#Union_766)">
+          <path id="Union_766-2" data-name="Union 766" d="M.579,19.006a1.973,1.973,0,0,1,0-2.792l5.93-5.932,1.695,1.7a1.628,1.628,0,0,0,.279,1.913L3.371,19.006a1.977,1.977,0,0,1-2.792,0Zm10.969-9.8a1.615,1.615,0,0,0-.737.176l-1.7-1.7,1.431-1.43A4.641,4.641,0,0,1,15.638.06a.423.423,0,0,1,.232.717l-.978.978a2.042,2.042,0,0,0,2.887,2.887l.978-.978a.423.423,0,0,1,.716.23,4.643,4.643,0,0,1-6.12,5.13l-.661.658A1.606,1.606,0,0,0,11.548,9.21Z" transform="translate(5.22 5.22)" stroke="#fff" stroke-width="0.5" fill="url(#linear-gradient)"/>
+        </g>
+        <path id="Path_169883" data-name="Path 169883" d="M12.6,27.06a.621.621,0,0,0-.878,0l-.354.354L5.064,21.108l.295-.295a.621.621,0,0,0-.071-.939L2.715,17.979a.621.621,0,0,0-.808.061L.815,19.132a.621.621,0,0,0-.061.807l1.895,2.573a.621.621,0,0,0,.939.071l.295-.295,6.306,6.306-.379.379a.621.621,0,0,0,0,.878l5.818,5.817a1.974,1.974,0,1,0,2.792-2.792Z" transform="translate(-0.616 -16.665)" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+  </g>
+</svg>
