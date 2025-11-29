@@ -10,32 +10,61 @@ export default function AllPosts() {
     const fetchPosts = async () => {
       try {
         const res = await appwriteService.getPosts();
-        if (res && res.documents) setPosts(res.documents);
+        if (res?.documents) setPosts(res.documents);
       } catch (err) {
         console.error("Failed to fetch posts:", err);
       } finally {
         setLoading(false);
       }
     };
+
     fetchPosts();
   }, []);
 
   return (
-    <div className="py-8">
+    <div className="py-10 min-h-screen bg-white dark:bg-black">
       <Container>
-        <h1 className="text-3xl font-bold mb-8">ALL POSTS</h1>
+        
+        {/* Title */}
+        <h1 className="text-3xl sm:text-4xl font-bold mb-10 text-center text-gray-900 dark:text-white">
+          ALL POSTS
+        </h1>
 
-        {loading ? (
-          <div className="text-center py-12">Loading posts...</div>
-        ) : posts.length ? (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Loading State */}
+        {loading && (
+          <div className="text-center py-20 text-gray-600 dark:text-gray-300 text-lg">
+            Loading posts...
+          </div>
+        )}
+
+        {/* No Posts */}
+        {!loading && posts.length === 0 && (
+          <div className="text-center text-gray-500 dark:text-gray-400 py-20 text-lg">
+            No posts available.
+          </div>
+        )}
+
+        {/* Posts Grid */}
+        {!loading && posts.length > 0 && (
+          <div
+            className="
+              grid w-full gap-6
+              grid-cols-1
+              sm:grid-cols-2
+              lg:grid-cols-3
+              xl:grid-cols-3
+              2xl:grid-cols-4
+              justify-items-center
+            "
+          >
             {posts.map((post) => (
-              <PostCard key={post.$id} post={post} />
+              <div key={post.$id} className="w-full max-w-[380px]">
+                <PostCard post={post} />
+              </div>
             ))}
           </div>
-        ) : (
-          <div className="text-center text-gray-500 py-12">No posts available.</div>
         )}
+
       </Container>
     </div>
   );
